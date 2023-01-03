@@ -1,0 +1,12 @@
+.text-area{
+    margin: 50px;
+    padding: auto;
+    border: 2px solid black;
+}
+.text-area button{
+    margin: auto;
+}
+.text-area textarea{
+    width: 400px;
+    height: 200px;
+}
