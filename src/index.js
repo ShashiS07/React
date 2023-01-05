@@ -7,11 +7,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 const ShowlocalTime = ()=>{
-  return <p>
-    {" "}
-    It is {new Date().toLocaleTimeString()}.
-    <HeadingComponentbyclass title="Hello hoomans"/>
-    {" "}</p>
+  return <div className='localetime'>
+    <p>It is {new Date().toLocaleTimeString()}.</p>
+    </div>
 }
 
   root.render(
