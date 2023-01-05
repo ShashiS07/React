@@ -5,19 +5,22 @@ import Counter from './Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+  const ShowlocalTime = ()=>{
+    return <div className='localetime'>
+      <p>It is {new Date().toLocaleTimeString()}.</p>
+      </div>
+  }
 
-const ShowlocalTime = ()=>{
-  return <div className='localetime'>
-    <p>It is {new Date().toLocaleTimeString()}.</p>
-    </div>
-}
 
+setInterval(()=>{
   root.render(
     <React.StrictMode>
-      <h1>Hello world</h1>
+      <h1>Simple Counter</h1>
       <ShowlocalTime/>
       <Counter/>
     </React.StrictMode>
   );
+},1000)
+
 
 
