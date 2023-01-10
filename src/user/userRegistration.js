@@ -62,8 +62,10 @@ const Registration=()=>{
                City: <input type="text" value={city} onChange={(e)=>setCity(e.target.value)}/><br/>
                Pincode: <input type="number" value={pincode} onChange={(e)=>setPincode(e.target.value)}/>
             </div>
+            <div className="btn">
                 <button type="submit" onClick={data}>Submit</button>
                 <button type="reset">Reset</button>
+            </div>
         </form>
     </div>
 }
